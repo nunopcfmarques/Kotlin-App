@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".API_Mania">
+
+    <ImageView
+        android:id="@+id/apimenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/factbutton"
+        android:layout_width="127dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="152dp"
+        android:text="GO!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomfact" />
+
+    <TextView
+        android:id="@+id/randomfact"
+        android:layout_width="289dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="54dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="start|top"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

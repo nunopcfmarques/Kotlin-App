@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ColorChanger">
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="93dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/R"
+        android:layout_width="257dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="77dp"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square"
+        app:tickVisible="false"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/G"
+        android:layout_width="257dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="77dp"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R"
+        app:tickVisible="false"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/B"
+        android:layout_width="257dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="77dp"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="255"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/G"
+        app:tickVisible="false"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/savecolor"
+        android:layout_width="111dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="160dp"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+    <TextView
+        android:id="@+id/redid"
+        android:layout_width="67dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="R: 0"
+        android:textAlignment="center"
+        android:textColor="#D50000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+    <TextView
+        android:id="@+id/greenid"
+        android:layout_width="67dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="G: 0"
+        android:textAlignment="center"
+        android:textColor="#00C853"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/blueid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/redid"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+    <TextView
+        android:id="@+id/blueid"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="B: 0"
+        android:textAlignment="center"
+        android:textColor="#2962FF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
